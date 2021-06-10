@@ -21,7 +21,7 @@ class CreateHolidaysTable extends Migration
             $table->tinyInteger('duration');
             $table->smallInteger('price');
             $table->tinyInteger('available_seats');
-            $table->string('travel arrangements', 30);
+            $table->string('travel_arrangements', 30);
             $table->timestamps();
         });
     }

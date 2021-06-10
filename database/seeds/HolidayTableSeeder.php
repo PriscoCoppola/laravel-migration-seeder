@@ -18,14 +18,15 @@ class HolidayTableSeeder extends Seeder
 
             // Aggiunta record
             $newHoliday->address = 'This is address' . rand(10, 100);
+            $newHoliday->city = 'This is city' . rand(10, 100);
+            $newHoliday->state = 'This is state' . rand(10, 100);
+            $newHoliday->duration = rand(3, 15);
+            $newHoliday->price = rand(100, 1500);
+            $newHoliday->available_seats = rand(1, 10);
+            $newHoliday->travel_arrangements = 'Ship';
 
-            // $table->string('address', 100);
-            // $table->string('city', 30);
-            // $table->string('state', 30);
-            // $table->tinyInteger('duration');
-            // $table->smallInteger('price');
-            // $table->tinyInteger('available_seats');
-            // $table->string('travel arrangements', 30);
+            // Salvataggio
+            $newHoliday->save();
         }
     }
 }
